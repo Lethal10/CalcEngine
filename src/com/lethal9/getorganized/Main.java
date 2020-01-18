@@ -19,7 +19,7 @@ public class Main {
             for (MathEquation equation : equations) {
                 equation.execute();
                 System.out.println("result = ");
-                System.out.println(equation.results);
+                System.out.println(equation.getResults());
 
 
             }
@@ -27,9 +27,9 @@ public class Main {
 
         public static MathEquation create (double leftVals , double rightvals, char opCode) {
         MathEquation equation = new MathEquation();
-        equation.leftVals = leftVals;
-        equation.rightVals = rightvals;
-        equation.opCode = opCode;
+        equation.setLeftVals(leftVals);
+        equation.setRightVals(rightvals);
+        equation.setOpCode(opCode);
 
         return equation;
         }

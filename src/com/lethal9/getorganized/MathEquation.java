@@ -1,11 +1,19 @@
 package com.lethal9.getorganized;
 
 public class MathEquation {
-    public double leftVals;
-    public double rightVals;
-    public char opCode;
-    public double results;
+    private double leftVals;
+    private double rightVals;
+    private char opCode;
+    private double results;
 
+    public  double getLeftVals() {return leftVals;}
+    public void setLeftVals(double leftVals) {this.leftVals = leftVals;}
+    public double getRightVals() {return rightVals;}
+    public void setRightVals(double rightVals) {this.rightVals = rightVals;}
+    public char getOpCode() {return  opCode;}
+    public void setOpCode(char opCode) {this.opCode = opCode;}
+
+    public double getResults() {return results;}
     public void execute() {
 
             switch (opCode) {
