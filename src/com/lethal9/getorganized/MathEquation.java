@@ -14,6 +14,19 @@ public class MathEquation {
     public void setOpCode(char opCode) {this.opCode = opCode;}
 
     public double getResults() {return results;}
+    public MathEquation() { }
+
+    public MathEquation (char opCode) {
+        this.opCode = opCode;
+    }
+
+    public MathEquation(char opCode, double leftVals, double rightVals) {
+        this(opCode);
+        this.leftVals = leftVals;
+        this.rightVals = rightVals;
+    }
+
+
     public void execute() {
 
             switch (opCode) {
